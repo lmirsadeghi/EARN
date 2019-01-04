@@ -31,6 +31,7 @@ To analyze the results and rank candidate driver genes, it is recommended to use
 •	If you do not have a license for Matlab, you can run the compiled version of MutSigCV using the free Matlab MCR: run_MutSigCV.sh <path_to_MCR> mutations.maf coverage.txt covariates.txt output.txt
 
 2.2 Requirements for OncodriveCLUST:
+
 •	Python 3; OncodriveCLUST depends on Python 3 and some external libraries, numpy, scipy, pandas and statsmodels.
 •	Anaconda 3; The easiest way to install all this software stack is using the well-known Anaconda Python distribution.
 
@@ -40,6 +41,7 @@ To analyze the results and rank candidate driver genes, it is recommended to use
 •	Anaconda 3; The easiest way to install all this software stack is using the well-known Anaconda Python distribution.
 
 2.4 Requirements for NetBox:
+
 •	Java 1.5 or later.
 •	Python 2.5 or later. 
 
@@ -64,9 +66,13 @@ https://bitbucket.org/bbglab/oncodrivefm
 4.1 Run the following command to see MutsigCV in action:
 ?	MutSigCV('C:\[directory]\....maf'...
  ,'C:\[directory]\MutSigCV\Required inputs\exome_full192.coverage.txt'...
+
  ,'C:\[directory]\MutSigCV\Required inputs\gene.covariates.txt'...
+
 ,'C:\[directory]\MutSigCV\ExampleData\MutSigCV_example_data.1.0.1\LUSC.example.output.txt'...
+
 ,'C:\[directory]\MutSigCV\Required inputs\mutation_type_dictionary_file.txt'...
+
  ,'C:\Users\[directory]\MutSigCV\Required inputs\chr_files_hg19')
 
 4.2	Run the following command to see OncodriveCLUST in action:
@@ -78,6 +84,7 @@ https://bitbucket.org/bbglab/oncodrivefm
 
 4.4	Run the following command to see NetBox in action:
 ?	cd C:\netbox\..._data
+
 C:\Python\Python36-32\python.exe C:\netbox\bin\netAnalyze.py C:\netbox\..._data\netbox1.props
 
 5 Ensemble learning system Requirements 
@@ -90,6 +97,7 @@ Scikit-learn package is available for download at:
 https://scikit-learn.org/stable/
 
 Please follow the steps below to install three individual machine learning methods and the proposed ensemble learning method:
+
 •	Download and UnRAR File named “CBBio.rar”.
 
 •	Replace your desired files including feature file (.csv), positive and negative data files (.txt), and Test file (.txt) instead of the default file.
@@ -104,6 +112,7 @@ To implement learning machine methods run the following commands in anaconda pro
 ?	For ensemble learning machine: cd [directory] python all_gene_classification.py
 
 •	Finally, two output files will be created for each of the machines.
+
 One of the files named “…_predictions_train” (.csv) assigns a new label to train data and predicts a score for each gene.
 In the next file named “…_predictions_test” (.csv), the test data is labeled and the scores for the genes are predicted.
 In this way, genes are prioritized according to their importance in the occurrence of cancer.
