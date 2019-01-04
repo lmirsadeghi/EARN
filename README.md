@@ -1,11 +1,17 @@
 # CBBio
 Contents
 1 Introduction 
+
 2 Software Tools Requirements
-3 Software tools installation on windows 
+
+3 Software tools installation on windows
+
 4 Source code for running software tools
+
 5 Ensemble learning system Requirements
+
 6 Machine learning methods installation on windows
+
 7 Source codes for implementation of machine learning algorithms
 
 1 Introduction 
