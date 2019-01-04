@@ -1,11 +1,18 @@
 # CBBio
 Contents
+
 1 Introduction 
+
 2 Software Tools Requirements
+
 3 Software tools installation on windows 
+
 4 Source code for running software tools
+
 5 Ensemble learning system Requirements
+
 6 Machine learning methods installation on windows
+
 7 Source codes for implementation of machine learning algorithms
 
 1 Introduction 
@@ -88,6 +95,7 @@ Note that the file names and formats are preserved.
 
 7   Source codes for implementation of machine learning algorithms
 To implement learning machine methods run the following commands in anaconda prompt 2:
+
 ?	For SVM: cd [directory] python svm_gene_classification.py
 ?	For ANN: cd [directory] python nn_gene_classification.py
 ?	For RF: cd [directory] python rf_gene_classification.py
