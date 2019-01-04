@@ -76,6 +76,7 @@ https://bitbucket.org/bbglab/oncodrivefm
  ,'C:\Users\[directory]\MutSigCV\Required inputs\chr_files_hg19')
 
 4.2	Run the following command to see OncodriveCLUST in action:
+
 ?	oncodriveclust -m 3 --cgc C:\[directory]\Anaconda3\bbglab-oncodriveclust-60e75d0cb432\data/CGC_phenotype.tsv C:\[directory]\Anaconda3\bbglab-oncodriveclust-60e75d0cb432\examples/…_nonsyn.txt C:\[directory]\Anaconda3\bbglab-oncodriveclust-60e75d0cb432\examples/…_syn.txt C:\[directory]\Anaconda3\bbglab-oncodriveclust-60e75d0cb432\data/gene_transcripts.tsv
 
 4.3	Run the following command to see OncodriveFM in action:
@@ -83,6 +84,7 @@ https://bitbucket.org/bbglab/oncodrivefm
 ?	oncodrivefm -e median -m C:\[directory]\Anaconda3\bbglab-oncodrivefm-0d3030da3f83\data/ensg_kegg.tsv C:\[directory]\Anaconda3\bbglab-oncodrivefm-0d3030da3f83\data/….tdm
 
 4.4	Run the following command to see NetBox in action:
+
 ?	cd C:\netbox\..._data
 
 C:\Python\Python36-32\python.exe C:\netbox\bin\netAnalyze.py C:\netbox\..._data\netbox1.props
