@@ -33,38 +33,45 @@ To analyze the results and rank candidate driver genes, it is recommended to use
 2.2 Requirements for OncodriveCLUST:
 
 •	Python 3; OncodriveCLUST depends on Python 3 and some external libraries, numpy, scipy, pandas and statsmodels.
+
 •	Anaconda 3; The easiest way to install all this software stack is using the well-known Anaconda Python distribution.
 
 2.3 Requirements for OncodriveFM:
 
 •	Python 3; OncodriveFM depends on Python 3 and some external libraries, numpy, scipy, pandas and statsmodels.
+
 •	Anaconda 3; The easiest way to install all this software stack is using the well-known Anaconda Python distribution.
 
 2.4 Requirements for NetBox:
 
 •	Java 1.5 or later.
+
 •	Python 2.5 or later. 
 
 3 Software tools installation on windows
 
-3.1 To install MutsigCV v.1.4, you must have: 
+3.1 To install MutsigCV v.1.4, you must have:
+ 
 •	The MutsigCV software and its reference files are available for download at: https://software.broadinstitute.org/cancer/cga/mutsig https://software.broadinstitute.org/cancer/cga/mutsig_run
 
 3.2 To install OncodriveCLUST, you must have: 
+
 •	OncodriveCLUST software and its requirements are available for download at: http://bg.upf.edu/group/projects/oncodrive-clust.php
 https://bitbucket.org/bbglab/oncodriveclust/overview
 
 3.3 To install OncodriveFM, you must have: 
+
 •	OncodriveFM software and its requirements are available for download at: http://bg.upf.edu/group/projects/oncodrive-fm.php
 https://bitbucket.org/bbglab/oncodrivefm
 
 3.4 To install NetBox 1.0, you must have: 
+
 •	The NetBox software, user guide, checking updates, and example datasets are available for download at: http://cbio.mskcc.org/netbo
 
 4 Source code for running software tools
 
 4.1 Run the following command to see MutsigCV in action:
-  MutSigCV('C:\[directory]\....maf'...
+?	MutSigCV('C:\[directory]\....maf'...
  ,'C:\[directory]\MutSigCV\Required inputs\exome_full192.coverage.txt'...
 
  ,'C:\[directory]\MutSigCV\Required inputs\gene.covariates.txt'...
@@ -77,15 +84,15 @@ https://bitbucket.org/bbglab/oncodrivefm
 
 4.2	Run the following command to see OncodriveCLUST in action:
 
-oncodriveclust -m 3 --cgc C:\[directory]\Anaconda3\bbglab-oncodriveclust-60e75d0cb432\data/CGC_phenotype.tsv C:\[directory]\Anaconda3\bbglab-oncodriveclust-60e75d0cb432\examples/…_nonsyn.txt C:\[directory]\Anaconda3\bbglab-oncodriveclust-60e75d0cb432\examples/…_syn.txt C:\[directory]\Anaconda3\bbglab-oncodriveclust-60e75d0cb432\data/gene_transcripts.tsv
+?	oncodriveclust -m 3 --cgc C:\[directory]\Anaconda3\bbglab-oncodriveclust-60e75d0cb432\data/CGC_phenotype.tsv C:\[directory]\Anaconda3\bbglab-oncodriveclust-60e75d0cb432\examples/…_nonsyn.txt C:\[directory]\Anaconda3\bbglab-oncodriveclust-60e75d0cb432\examples/…_syn.txt C:\[directory]\Anaconda3\bbglab-oncodriveclust-60e75d0cb432\data/gene_transcripts.tsv
 
 4.3	Run the following command to see OncodriveFM in action:
 
-oncodrivefm -e median -m C:\[directory]\Anaconda3\bbglab-oncodrivefm-0d3030da3f83\data/ensg_kegg.tsv C:\[directory]\Anaconda3\bbglab-oncodrivefm-0d3030da3f83\data/….tdm
+?	oncodrivefm -e median -m C:\[directory]\Anaconda3\bbglab-oncodrivefm-0d3030da3f83\data/ensg_kegg.tsv C:\[directory]\Anaconda3\bbglab-oncodrivefm-0d3030da3f83\data/….tdm
 
 4.4	Run the following command to see NetBox in action:
 
-cd C:\netbox\..._data
+?	cd C:\netbox\..._data
 
 C:\Python\Python36-32\python.exe C:\netbox\bin\netAnalyze.py C:\netbox\..._data\netbox1.props
 
@@ -108,10 +115,10 @@ Note that the file names and formats are preserved.
 7   Source codes for implementation of machine learning algorithms
 To implement learning machine methods run the following commands in anaconda prompt 2:
 
-For SVM: cd [directory] python svm_gene_classification.py
-For ANN: cd [directory] python nn_gene_classification.py
-For RF: cd [directory] python rf_gene_classification.py
-For ensemble learning machine: cd [directory] python all_gene_classification.py
+?	For SVM: cd [directory] python svm_gene_classification.py
+?	For ANN: cd [directory] python nn_gene_classification.py
+?	For RF: cd [directory] python rf_gene_classification.py
+?	For ensemble learning machine: cd [directory] python all_gene_classification.py
 
 •	Finally, two output files will be created for each of the machines.
 
