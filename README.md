@@ -1,18 +1,11 @@
 # CBBio
 Contents
-
 1 Introduction 
-
 2 Software Tools Requirements
-
-3 Software tools installation on windows
-
+3 Software tools installation on windows 
 4 Source code for running software tools
-
 5 Ensemble learning system Requirements
-
 6 Machine learning methods installation on windows
-
 7 Source codes for implementation of machine learning algorithms
 
 1 Introduction 
@@ -85,6 +78,7 @@ Python 2.5 or later; We used scikit-learn package to train machine learning mode
 
 6 Machine learning methods installation on windows
 Scikit-learn package is available for download at:
+
 https://scikit-learn.org/stable/
 Please follow the steps below to install three individual machine learning methods and the proposed ensemble learning method:
 •	Download and UnRAR File named “CBBio.rar”.
