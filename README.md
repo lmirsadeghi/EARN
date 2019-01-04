@@ -110,12 +110,21 @@ In this way, genes are prioritized according to their importance in the occurren
 References:
 
 [1]	M. S. Lawrence et al., “Mutational heterogeneity in cancer and the search for new cancer-associated genes,” Nature, vol. 499, no. 7457, pp. 214–218, 2013.
+
 [2]	D. Tamborero, A. Gonzalez-Perez, and N. Lopez-Bigas, “OncodriveCLUST: exploiting the positional clustering of somatic mutations to identify cancer genes,” Bioinformatics, vol. 29, no. 18, pp. 2238–2244, 2013.
+
 [3]	A. Gonzalez-Perez and N. Lopez-Bigas, “Functional impact bias reveals cancer drivers,” Nucleic Acids Res., vol. 40, no. 21, pp. e169–e169, 2012.
+
 [4]	E. Cerami, E. Demir, N. Schultz, B. S. Taylor, and C. Sander, “Automated network analysis identifies core pathways in glioblastoma,” PLoS One, vol. 5, no. 2, p. e8918, 2010.
+
 [5]	L. Rokach, “Ensemble-based classifiers,” Artif. Intell. Rev., vol. 33, no. 1–2, pp. 1–39, 2010.
+
 [6]	C. Cortes and V. Vapnik, “Support-vector networks,” Mach. Learn., vol. 20, no. 3, pp. 273–297, 1995.
+
 [7]	F. Rosenblatt, “The perceptron: a probabilistic model for information storage and organization in the brain.,” Psychol. Rev., vol. 65, no. 6, p. 386, 1958.
+
 [8]	J. Schmidhuber, “Deep learning in neural networks: An overview,” Neural networks, vol. 61, pp. 85–117, 2015.
+
 [9]	T. K. Ho, “Random decision forests,” in Document Analysis and Recognition, 1995., Proceedings of the Third International Conference on, 1995, vol. 1, pp. 278–282.
+
 [10]	R. Polikar, “Ensemble based systems in decision making,” Circuits Syst. Mag. IEEE, vol. 6, no. 3, pp. 21–45, 2006.
