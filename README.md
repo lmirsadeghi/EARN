@@ -1,0 +1,2 @@
+# CBBio
+This package can help to analysis Whole-Exome Sequencing (WES) data, files (.maf) and so on. It is used for identification of candidate driver genes associated with cancers based on mutations that occur in genes. This package has been created in the Laboratory of Complex Biological Systems and Bioinformatics (CBB) in the Department of Bioinformatics at the University of Tehran, Tehran, Iran.
