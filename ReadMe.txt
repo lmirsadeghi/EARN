@@ -21,7 +21,7 @@ For example, the published data in a study on metastatic breast cancer has been 
 It is used for identification of candidate driver genes associated with cancers based on mutations that occur in genes.
 
 In the first step, it uses four software tools for features extraction from mutation (whole-exome sequencing) data.
-These software tools are MutSigCV v.1.4 [4], OncodriveCUST [5], OncodriveFM [6], and NetBox 1.0 [7]. They rank genes based on P-value (0=P-value=1). 
+These software tools are MutSigCV v.1.4 [4], OncodriveCUST [5], OncodriveFM [6], and NetBox 1.0 [7]. They rank genes based on P-value.
 
 And then any tool assigns a number to genes as a feature.
 
@@ -37,48 +37,48 @@ To analyze the results and rank candidate driver genes, it is recommended to use
 
 2.1 Requirements for MutsigCV v.1.4:
 
-ï	A license for Matlab (Full ToolBox), you can run MutSigCV from its source code file: MutSigCV.m
-ï	If you do not have a license for Matlab, you can run the compiled version of MutSigCV using the free Matlab MCR: run_MutSigCV.sh <path_to_MCR> mutations.maf coverage.txt covariates.txt output.txt
+‚Ä¢	A license for Matlab (Full ToolBox), you can run MutSigCV from its source code file: MutSigCV.m
+‚Ä¢	If you do not have a license for Matlab, you can run the compiled version of MutSigCV using the free Matlab MCR: run_MutSigCV.sh <path_to_MCR> mutations.maf coverage.txt covariates.txt output.txt
 
 2.2 Requirements for OncodriveCLUST:
 
-ï	Python 3; OncodriveCLUST depends on Python 3 and some external libraries, numpy, scipy, pandas and statsmodels.
+‚Ä¢	Python 3; OncodriveCLUST depends on Python 3 and some external libraries, numpy, scipy, pandas and statsmodels.
 
-ï	Anaconda 3; The easiest way to install all this software stack is using the well-known Anaconda Python distribution.
+‚Ä¢	Anaconda 3; The easiest way to install all this software stack is using the well-known Anaconda Python distribution.
 
 2.3 Requirements for OncodriveFM:
 
-ï	Python 3; OncodriveFM depends on Python 3 and some external libraries, numpy, scipy, pandas and statsmodels.
+‚Ä¢	Python 3; OncodriveFM depends on Python 3 and some external libraries, numpy, scipy, pandas and statsmodels.
 
-ï	Anaconda 3; The easiest way to install all this software stack is using the well-known Anaconda Python distribution.
+‚Ä¢	Anaconda 3; The easiest way to install all this software stack is using the well-known Anaconda Python distribution.
 
 2.4 Requirements for NetBox:
 
-ï	Java 1.5 or later.
+‚Ä¢	Java 1.5 or later.
 
-ï	Python 2.5 or later. 
+‚Ä¢	Python 2.5 or later. 
 
 3 Software tools installation on windows
 
 3.1 To install MutsigCV v.1.4, you must have:
  
-ï	The MutsigCV software and its reference files are available for download at: 
+‚Ä¢	The MutsigCV software and its reference files are available for download at: 
 
 https://software.broadinstitute.org/cancer/cga/mutsig https://software.broadinstitute.org/cancer/cga/mutsig_run
 
 3.2 To install OncodriveCLUST, you must have: 
 
-ï	OncodriveCLUST software and its requirements are available for download at: http://bg.upf.edu/group/projects/oncodrive-clust.php
+‚Ä¢	OncodriveCLUST software and its requirements are available for download at: http://bg.upf.edu/group/projects/oncodrive-clust.php
 https://bitbucket.org/bbglab/oncodriveclust/overview
 
 3.3 To install OncodriveFM, you must have: 
 
-ï	OncodriveFM software and its requirements are available for download at: http://bg.upf.edu/group/projects/oncodrive-fm.php
+‚Ä¢	OncodriveFM software and its requirements are available for download at: http://bg.upf.edu/group/projects/oncodrive-fm.php
 https://bitbucket.org/bbglab/oncodrivefm
 
 3.4 To install NetBox 1.0, you must have: 
 
-ï	The NetBox software, user guide, checking updates, and example datasets are available for download at: http://cbio.mskcc.org/netbo
+‚Ä¢	The NetBox software, user guide, checking updates, and example datasets are available for download at: http://cbio.mskcc.org/netbo
 
 4 Source code for running software tools
 
@@ -116,9 +116,9 @@ https://scikit-learn.org/stable/
 
 Please follow the steps below to install three individual machine learning methods and the proposed ensemble learning method:
 
-ï	Download and UnRAR File named ìCBBio.rarî.
+‚Ä¢	Download and UnRAR File named ‚ÄúCBBio.rar‚Äù.
 
-ï	Replace your desired files including feature file (.csv), positive and negative data files (.txt), and Test file (.txt) instead of the default file.
+‚Ä¢	Replace your desired files including feature file (.csv), positive and negative data files (.txt), and Test file (.txt) instead of the default file.
 Note that the file names and formats are preserved.
 
 7   Source codes for implementation of machine learning algorithms
@@ -133,25 +133,25 @@ For RF: cd [directory] python rf_gene_classification.py -cvr 100
 
 For ensemble learning machine: cd [directory] python all_gene_classification.py -cvr 100
 
-ï	Finally, two output files will be created for each of the machines.
+‚Ä¢	Finally, two output files will be created for each of the machines.
 
-One of the files named ìÖ_predictions_trainî (.csv) assigns a new label to train data and predicts a score for each gene.
-In the next file named ìÖ_predictions_testî (.csv), the test data is labeled and the scores for the genes are predicted.
+One of the files named ‚Äú‚Ä¶_predictions_train‚Äù (.csv) assigns a new label to train data and predicts a score for each gene.
+In the next file named ‚Äú‚Ä¶_predictions_test‚Äù (.csv), the test data is labeled and the scores for the genes are predicted.
 In this way, genes are prioritized according to their importance in the occurrence of cancer.
 
 References:
-[1]	N. Wagle et al., ìThe Metastatic Breast Cancer (MBC) project: Accelerating translational research through direct patient engagement.î American Society of Clinical Oncology, 2017.
-[2]	E. Cerami et al., ìThe cBio cancer genomics portal: an open platform for exploring multidimensional cancer genomics data.î AACR, 2012.
-[3]	J. Gao et al., ìIntegrative analysis of complex cancer genomics and clinical profiles using the cBioPortal,î Sci. Signal., vol. 6, no. 269, pp. pl1-pl1, 2013.
-[4]	M. S. Lawrence et al., ìMutational heterogeneity in cancer and the search for new cancer-associated genes,î Nature, vol. 499, no. 7457, pp. 214ñ218, 2013.
-[5]	D. Tamborero, A. Gonzalez-Perez, and N. Lopez-Bigas, ìOncodriveCLUST: exploiting the positional clustering of somatic mutations to identify cancer genes,î Bioinformatics, vol. 29, no. 18, pp. 2238ñ2244, 2013.
-[6]	A. Gonzalez-Perez and N. Lopez-Bigas, ìFunctional impact bias reveals cancer drivers,î Nucleic Acids Res., vol. 40, no. 21, pp. e169ñe169, 2012.
-[7]	E. Cerami, E. Demir, N. Schultz, B. S. Taylor, and C. Sander, ìAutomated network analysis identifies core pathways in glioblastoma,î PLoS One, vol. 5, no. 2, p. e8918, 2010.
-[8]	L. Rokach, ìEnsemble-based classifiers,î Artif. Intell. Rev., vol. 33, no. 1ñ2, pp. 1ñ39, 2010.
-[9]	C. Cortes and V. Vapnik, ìSupport-vector networks,î Mach. Learn., vol. 20, no. 3, pp. 273ñ297, 1995.
-[10]	F. Rosenblatt, ìThe perceptron: a probabilistic model for information storage and organization in the brain.,î Psychol. Rev., vol. 65, no. 6, p. 386, 1958.
-[11]	J. Schmidhuber, ìDeep learning in neural networks: An overview,î Neural networks, vol. 61, pp. 85ñ117, 2015.
-[12]	T. K. Ho, ìRandom decision forests,î in Document Analysis and Recognition, 1995., Proceedings of the Third International Conference on, 1995, vol. 1, pp. 278ñ282.
-[13]	R. Polikar, ìEnsemble based systems in decision making,î Circuits Syst. Mag. IEEE, vol. 6, no. 3, pp. 21ñ45, 2006.
+[1]	N. Wagle et al., ‚ÄúThe Metastatic Breast Cancer (MBC) project: Accelerating translational research through direct patient engagement.‚Äù American Society of Clinical Oncology, 2017.
+[2]	E. Cerami et al., ‚ÄúThe cBio cancer genomics portal: an open platform for exploring multidimensional cancer genomics data.‚Äù AACR, 2012.
+[3]	J. Gao et al., ‚ÄúIntegrative analysis of complex cancer genomics and clinical profiles using the cBioPortal,‚Äù Sci. Signal., vol. 6, no. 269, pp. pl1-pl1, 2013.
+[4]	M. S. Lawrence et al., ‚ÄúMutational heterogeneity in cancer and the search for new cancer-associated genes,‚Äù Nature, vol. 499, no. 7457, pp. 214‚Äì218, 2013.
+[5]	D. Tamborero, A. Gonzalez-Perez, and N. Lopez-Bigas, ‚ÄúOncodriveCLUST: exploiting the positional clustering of somatic mutations to identify cancer genes,‚Äù Bioinformatics, vol. 29, no. 18, pp. 2238‚Äì2244, 2013.
+[6]	A. Gonzalez-Perez and N. Lopez-Bigas, ‚ÄúFunctional impact bias reveals cancer drivers,‚Äù Nucleic Acids Res., vol. 40, no. 21, pp. e169‚Äìe169, 2012.
+[7]	E. Cerami, E. Demir, N. Schultz, B. S. Taylor, and C. Sander, ‚ÄúAutomated network analysis identifies core pathways in glioblastoma,‚Äù PLoS One, vol. 5, no. 2, p. e8918, 2010.
+[8]	L. Rokach, ‚ÄúEnsemble-based classifiers,‚Äù Artif. Intell. Rev., vol. 33, no. 1‚Äì2, pp. 1‚Äì39, 2010.
+[9]	C. Cortes and V. Vapnik, ‚ÄúSupport-vector networks,‚Äù Mach. Learn., vol. 20, no. 3, pp. 273‚Äì297, 1995.
+[10]	F. Rosenblatt, ‚ÄúThe perceptron: a probabilistic model for information storage and organization in the brain.,‚Äù Psychol. Rev., vol. 65, no. 6, p. 386, 1958.
+[11]	J. Schmidhuber, ‚ÄúDeep learning in neural networks: An overview,‚Äù Neural networks, vol. 61, pp. 85‚Äì117, 2015.
+[12]	T. K. Ho, ‚ÄúRandom decision forests,‚Äù in Document Analysis and Recognition, 1995., Proceedings of the Third International Conference on, 1995, vol. 1, pp. 278‚Äì282.
+[13]	R. Polikar, ‚ÄúEnsemble based systems in decision making,‚Äù Circuits Syst. Mag. IEEE, vol. 6, no. 3, pp. 21‚Äì45, 2006.
 
 
