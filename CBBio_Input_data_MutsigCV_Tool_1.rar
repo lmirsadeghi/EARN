@@ -1,0 +1,3 @@
+git config --global user.name "lmirsadeghi"
+git config --global user.email "l.mirsadeghi@alumni.ut.ac.ir"
+git init CBBio
