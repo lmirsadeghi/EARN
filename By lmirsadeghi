@@ -1,4 +1,4 @@
 git config --global user.name "lmirsadghi"
 git config -- global user.email "l.mirsadeghi@alumni.ut.ac.ir"
 git init CBBio
-git add C:\Users\Ghasedak Store\Documents\Layla\GitHub\Input_Data_Software_Tools\CBBio_Input_data_MutsigCV_Tool_1.rar
+git add CBBio_Input_data_MutsigCV_Tool_1.rar
