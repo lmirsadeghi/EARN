@@ -61,6 +61,7 @@ To analyze the results and rank candidate driver genes, it is recommended to use
 
 3 Software tools installation on windows
 
+
 3.1 To install MutsigCV v.1.4, you must have:
  
 •	The MutsigCV software and its reference files are available for download at: 
@@ -80,6 +81,7 @@ https://bitbucket.org/bbglab/oncodrivefm
 3.4 To install NetBox 1.0, you must have: 
 
 •	The NetBox software, user guide, checking updates, and example datasets are available for download at: http://cbio.mskcc.org/netbo
+
 
 4 Source code for running software tools
 
@@ -106,9 +108,10 @@ oncodrivefm -e median -m C:\ProgramData\Anaconda3\bbglab-oncodrivefm-0d3030da3f8
 cd C:\netbox\brca_data 
 C:\Python\Python36-32\python.exe C:\netbox\bin\netAnalyze.py C:\netbox\brca_data\netbox1.props
 
+
 5 Ensemble learning system Requirements 
 Requirements for machine learning methods:
-Python 2.5 or later; We used scikit-learn package to train machine learning models and implement our algorithms in python.
+Anaconda 2, Python 2.5 or later; We used scikit-learn package to train machine learning models and implement our algorithms in python.
 
 6 Machine learning methods installation on windows
 Scikit-learn package is available for download at:
@@ -117,7 +120,7 @@ https://scikit-learn.org/stable/
 
 Please follow the steps below to install three individual machine learning methods and the proposed ensemble learning method:
 
-•	Download and UnRAR File named “CBBio.rar”.
+•	Download and UnRAR File named “gene_classification.rar”.
 
 •	Replace your desired files including feature file (.csv), positive and negative data files (.txt), and Test file (.txt) instead of the default file.
 Note that the file names and formats are preserved.
