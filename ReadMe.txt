@@ -19,15 +19,15 @@ Contents
 1 Introduction
  
 This package called "CBBio" proposes a fusion system. This fusion system can help to analysis Whole-Exome Sequencing (WES) data, files (.maf) and so on. 
-For example, the published data in a study on metastatic breast cancer has been used as initial input data [1], [2], and [3] in this package.
-It is used for identification of candidate driver genes associated with cancers based on mutations that occur in genes.
+In this package, the published data in a study [1] on metastatic breast cancer has been used as initial input data. It is also available in cBioPortal [2], and [3].
+This proposed fusion method can be used for identification of candidate driver genes associated with cancers based on mutations that occur in genes.
 
 In the first step, it uses four software tools for features extraction from mutation (whole-exome sequencing) data.
 These software tools are MutSigCV v.1.4 [4], OncodriveCUST [5], OncodriveFM [6], and NetBox 1.0 [7]. They rank genes based on P-value.
 
 And then any tool assigns a number to genes as a feature.
 
-At next an ensemble machine learning method [8]was applied for driver genes prioritization based on feature Integration. It involves three individual classifiers including non-linear SVM (Support Vector Machine) [9], ANN (Artificial Neural Network) [10] and [11], and RF (Random Forest) [12]. 
+At next an ensemble machine learning method [8] was applied for driver genes prioritization based on feature Integration. It involves three individual classifiers including non-linear SVM (Support Vector Machine) [9], ANN (Artificial Neural Network) [10] and [11], and RF (Random Forest) [12]. 
 
 They labeled genes based on two indexes 0 and 1 (0 means passenger gene and 1 means driver gene) and also predicted a score for a gene. Finally, the ensemble learning method adopts the final decision for each gene. 
 
