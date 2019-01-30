@@ -1,0 +1,32 @@
+For running MutsigCV:
+1- Open Matlab2018_b (Full Tool Box)
+2- Open source code (MutSigCV.m)
+3- >> addpath C:\Users\Ghasedak Store\MutSigCV
+4- MutSigCV('C:\Users\Ghasedak Store\simpleSomaticMutations\data_mutations_extended.maf'...
+    ,'C:\Users\Ghasedak Store\MutSigCV\Required inputs\exome_full192.coverage.txt'...
+    ,'C:\Users\Ghasedak Store\MutSigCV\Required inputs\gene.covariates.txt'...
+    ,'C:\Users\Ghasedak Store\MutSigCV\Example Data\MutSigCV_example_data.1.0.1\LUSC.example.output.txt'...
+    ,'C:\Users\Ghasedak Store\MutSigCV\Required inputs\mutation_type_dictionary_file.txt'...
+    ,'C:\Users\Ghasedak Store\MutSigCV\Required inputs\chr_files_hg19')
+
+
+For running NetBox:
+1- Open Anaconda3
+2- (C:\ProgramData\Anaconda3) C:\Users\Ghasedak Store>cd C:\netbox\brca_data 
+3- C:\Python\Python36-32\python.exe C:\netbox\bin\netAnalyze.py C:\netbox\brca_data\netbox1.props
+
+For instalation of OncodriveFM:
+1- Open Anaconda3
+2- (C:\ProgramData\Anaconda3) C:\Users\Ghasedak Store>pip install OncodriveFM
+
+For running OncodriveFM:
+1- Open Anaconda3
+2- (C:\ProgramData\Anaconda3) C:\Users\Ghasedak Store>oncodrivefm -e median -m C:\ProgramData\Anaconda3\bbglab-oncodrivefm-0d3030da3f83\data/ensg_kegg.tsv C:\ProgramData\Anaconda3\bbglab-oncodrivefm-0d3030da3f83\data/MBCA1.tdm
+
+For instalation of OncodriveCLUST:
+1- Open Anaconda3
+2- (C:\ProgramData\Anaconda3) C:\Users\Ghasedak Store>pip install OncodriveCLUST
+
+For running OncodriveCLUST:
+1- Open Anaconda3
+2- (C:\ProgramData\Anaconda3) C:\Users\Ghasedak Store>oncodriveclust -m 3 --cgc C:\ProgramData\Anaconda3\bbglab-oncodriveclust-60e75d0cb432\data/CGC_phenotype.tsv C:\ProgramData\Anaconda3\bbglab-oncodriveclust-60e75d0cb432\examples/nonsyn-mbca.txt C:\ProgramData\Anaconda3\bbglab-oncodriveclust-60e75d0cb432\examples/syn-mbca.txt C:\ProgramData\Anaconda3\bbglab-oncodriveclust-60e75d0cb432\data/gene_transcripts.tsv
